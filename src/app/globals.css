@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@theme {
+  --font-serif: 'Bodoni Moda', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --color-brand-ivory: #faf9f6;
+  --color-brand-champagne: #f7f3f0;
+  --color-brand-taupe: #6a5c51;
+  --color-brand-taupe-light: #c5b3a6;
+  --color-brand-charcoal: #2c2c2c;
+  --color-brand-black: #1a1c1a;
+  --color-brand-surface-low: #f4f3f1;
+  --color-brand-surface-card: #ffffff;
+  --color-brand-surface-muted: #efeeeb;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #faf9f6;
+  color: #1a1c1a;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #faf9f6;
+  color: #1a1c1a;
+  overflow-x: hidden;
+  selection-background-color: #f3dfd1;
+  selection-color: #706257;
+}
+
+::selection {
+  background-color: #f3dfd1;
+  color: #706257;
+}
+
+.font-editorial {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.font-body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ambient-shadow {
+  box-shadow: 0 20px 40px rgba(197, 179, 166, 0.15);
+}
+
+.ambient-shadow-sm {
+  box-shadow: 0 10px 25px rgba(197, 179, 166, 0.1);
+}
+
+.ambient-shadow-lg {
+  box-shadow: 0 30px 60px rgba(197, 179, 166, 0.2);
+}
+
+.hairline-border {
+  border: 1px solid rgba(197, 179, 166, 0.3);
+}
+
+.hairline-border-t {
+  border-top: 1px solid rgba(197, 179, 166, 0.3);
+}
+
+.hairline-border-b {
+  border-bottom: 1px solid rgba(197, 179, 166, 0.3);
+}
+
+.hairline-border-l {
+  border-left: 1px solid rgba(197, 179, 166, 0.3);
+}
+
+.hairline-border-r {
+  border-right: 1px solid rgba(197, 179, 166, 0.3);
+}
+
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  border-radius: 0;
+}
