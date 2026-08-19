@@ -6,6 +6,7 @@ import { HeroSection } from '@/features/home/components/HeroSection';
 import { AtelierPhilosophy } from '@/features/home/components/AtelierPhilosophy';
 import { WorkSection } from '@/features/work/components/WorkSection';
 import { ServicesSection } from '@/features/services/components/ServicesSection';
+import { CreatorModelSection } from '@/features/creator/components/CreatorModelSection';
 import { ContactSection } from '@/features/contact/components/ContactSection';
 import { Footer } from '@/features/footer/components/Footer';
 import { WorkCategory } from '@/features/work/types/work.types';
@@ -24,6 +25,10 @@ export function MainAppView() {
   const handleServiceSelectForBooking = (serviceTitle: string, estimatedCost?: number) => {
     setBookingServiceName(serviceTitle);
     setBookingEstimatedCost(estimatedCost);
+    const contactSection = document.querySelector('#contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const handleProjectSelectForBooking = (projectTitle: string) => {
@@ -46,13 +51,15 @@ export function MainAppView() {
 
         <AtelierPhilosophy />
 
+        <ServicesSection onSelectServiceToBook={handleServiceSelectForBooking} />
+
+        <CreatorModelSection onBookCollab={handleServiceSelectForBooking} />
+
         <WorkSection
           externalCategory={selectedWorkCategory}
           onSelectCategory={(cat) => setSelectedWorkCategory(cat)}
           onBookProject={handleProjectSelectForBooking}
         />
-
-        <ServicesSection onSelectServiceToBook={handleServiceSelectForBooking} />
 
         <ContactSection
           prefilledServiceName={bookingServiceName}
@@ -64,3 +71,4 @@ export function MainAppView() {
     </div>
   );
 }
+

@@ -10,8 +10,8 @@ export const ATELIER_STATS: AtelierStat[] = [
     label: 'Clients & Special Events',
   },
   {
-    value: '85+',
-    label: 'Brand & Graphic Projects',
+    value: '95+',
+    label: 'Digital & Creative Projects',
   },
   {
     value: '100%',
@@ -34,9 +34,9 @@ export const ATELIER_PILLARS: AtelierPillar[] = [
   },
   {
     number: '03',
-    title: 'Graphic Design',
+    title: 'Digital Templates',
     description:
-      'Thoughtful brand identities, logo marks, packaging dielines, and digital graphics to help businesses build a cohesive presence.',
+      'Custom editable Canva templates, social media kits, and digital documents designed for creators and boutique businesses.',
   },
 ];
 
@@ -56,9 +56,10 @@ export const PRESS_MENTIONS: PressMention[] = [
   {
     name: 'STUDIO KIN',
     quote:
-      'Francene created our complete brand identity and social assets. Modern, polished, and on time.',
-    issue: 'Brand Identity Project',
+      'Francene produced high-converting UGC videos for our skincare launch. Aesthetic, engaging, and drove fantastic engagement.',
+    issue: 'Beauty UGC Campaign',
   },
 ];
+
 
 
