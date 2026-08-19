@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { SERVICE_PACKAGES } from '../constants/servicePackages';
 import { HairMakeupSection } from './HairMakeupSection';
 import { NailServicesSection } from './NailServicesSection';
-import { GraphicDesignSection } from './GraphicDesignSection';
+import { DigitalServicesSection } from './DigitalServicesSection';
 import { CustomPackageCalculator } from './CustomPackageCalculator';
 import { ProcessTimeline } from './ProcessTimeline';
 
@@ -34,16 +34,16 @@ export function ServicesSection({ onSelectServiceToBook }: ServicesSectionProps)
   };
 
   return (
-    <div id="services" className="px-6 sm:px-10 lg:px-20 max-w-[1440px] mx-auto">
-      <div className="pt-24 sm:pt-32 pb-12 text-center max-w-2xl mx-auto border-t border-[#c5b3a6]/20">
+    <div id="services" className="w-full">
+      <div className="pt-24 sm:pt-32 pb-12 px-6 sm:px-10 lg:px-20 max-w-[1440px] mx-auto text-center border-t border-[#c5b3a6]/20">
         <span className="text-xs uppercase tracking-[0.2em] text-[#6a5c51] font-medium block mb-3">
           Disciplines &amp; Offerings
         </span>
         <h2 className="font-editorial text-3xl sm:text-5xl text-[#1a1c1a] font-medium tracking-tight">
           Services &amp; Pricing
         </h2>
-        <p className="mt-4 text-[#484740] font-body text-sm sm:text-base leading-relaxed">
-          Comprehensive offerings tailored for hair and makeup styling, custom nail services, and creative brand design projects.
+        <p className="mt-4 text-[#484740] font-body text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+          Comprehensive client offerings tailored for hair and makeup styling, custom nail services, and digital Canva templates.
         </p>
       </div>
 
@@ -57,19 +57,21 @@ export function ServicesSection({ onSelectServiceToBook }: ServicesSectionProps)
         onCustomize={handleSelectForEstimate}
       />
 
-      <GraphicDesignSection
+      <DigitalServicesSection
         onBookService={handleDirectBook}
         onCustomize={handleSelectForEstimate}
       />
 
-      <div id="atelier-calculator" className="py-20 border-t border-[#c5b3a6]/20">
-        <CustomPackageCalculator
-          selectedServiceId={selectedEstimatorServiceId}
-          onProceedToBooking={onSelectServiceToBook}
-        />
-      </div>
+      <div className="px-6 sm:px-10 lg:px-20 max-w-[1440px] mx-auto">
+        <div id="atelier-calculator" className="py-20 border-t border-[#c5b3a6]/20">
+          <CustomPackageCalculator
+            selectedServiceId={selectedEstimatorServiceId}
+            onProceedToBooking={onSelectServiceToBook}
+          />
+        </div>
 
-      <ProcessTimeline />
+        <ProcessTimeline />
+      </div>
     </div>
   );
 }

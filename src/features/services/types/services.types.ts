@@ -1,4 +1,4 @@
-export type ServiceCategory = 'hair-makeup' | 'nails' | 'design' | 'bespoke';
+export type ServiceCategory = 'hair-makeup' | 'nails' | 'digital' | 'bespoke';
 
 export interface ServiceTier {
   name: string;

@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { SERVICE_PACKAGES } from '../constants/servicePackages';
 
@@ -14,7 +14,7 @@ export function NailServicesSection({ onBookService, onCustomize }: NailServices
   if (!pkg) return null;
 
   return (
-    <section id="nail-services" className="py-20 border-t border-[#c5b3a6]/20">
+    <section id="nail-services" className="bg-[#f0e5da] py-20 px-6 sm:px-10 lg:px-20 border-t border-[#c5b3a6]/25">
       <div className="max-w-[1440px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -24,8 +24,7 @@ export function NailServicesSection({ onBookService, onCustomize }: NailServices
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12"
         >
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-[#6a5c51] font-semibold mb-3">
-              <Sparkles className="w-4 h-4" />
+            <div className="text-xs uppercase tracking-[0.2em] text-[#6a5c51] font-semibold mb-3">
               <span>Service 02 &bull; Hand &amp; Nail Artistry</span>
             </div>
             <h3 className="font-editorial text-3xl sm:text-4xl lg:text-5xl text-[#1a1c1a] font-medium">
@@ -39,7 +38,7 @@ export function NailServicesSection({ onBookService, onCustomize }: NailServices
           <div className="flex items-center gap-3 shrink-0">
             <button
               onClick={() => onCustomize(pkg.id)}
-              className="py-3 px-5 bg-[#f7f3f0] hover:bg-[#efeeeb] text-[#1a1c1a] text-xs font-medium uppercase tracking-[0.18em] border border-[#c5b3a6]/30 transition-colors"
+              className="py-3 px-5 bg-[#ffffff] hover:bg-[#f7f3f0] text-[#1a1c1a] text-xs font-medium uppercase tracking-[0.18em] border border-[#c5b3a6]/30 transition-colors"
             >
               Customize Package
             </button>
@@ -54,7 +53,7 @@ export function NailServicesSection({ onBookService, onCustomize }: NailServices
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          <div className="lg:col-span-4 bg-[#f7f3f0]/70 p-8 border border-[#c5b3a6]/30 flex flex-col justify-between">
+          <div className="lg:col-span-4 bg-[#ffffff]/90 p-8 border border-[#c5b3a6]/30 flex flex-col justify-between">
             <div>
               <span className="text-xs uppercase tracking-[0.18em] text-[#6a5c51] font-semibold block mb-3">
                 Included in Every Session
@@ -89,7 +88,7 @@ export function NailServicesSection({ onBookService, onCustomize }: NailServices
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.6, delay: idx * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                className="bg-[#faf9f6] border border-[#c5b3a6]/30 p-8 flex flex-col justify-between hover-lift ambient-shadow-sm"
+                className="bg-[#ffffff] border border-[#c5b3a6]/30 p-8 flex flex-col justify-between hover-lift ambient-shadow-sm"
               >
                 <div>
                   <div className="flex justify-between items-start gap-2 mb-4">
