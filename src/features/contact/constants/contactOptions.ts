@@ -1,8 +1,9 @@
 export const SERVICE_SELECT_OPTIONS = [
   'Hair & Makeup Services',
   'Custom Gel Nails & Extensions',
-  'Brand Identity & Graphic Design',
-  'All-In Hair, Makeup, Nails & Design',
+  'Custom Canva & Digital Templates',
+  'UGC & Modeling Collaboration',
+  'All-In Hair, Makeup & Nail Package',
   'Other Custom Project',
 ];
 
