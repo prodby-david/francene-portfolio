@@ -1,4 +1,4 @@
-export type WorkCategory = 'all' | 'hair-makeup' | 'nails' | 'design';
+export type WorkCategory = 'all' | 'hair-makeup' | 'nails' | 'digital';
 
 export interface WorkCategoryOption {
   id: WorkCategory;
@@ -24,7 +24,7 @@ export interface PortfolioItem {
   id: string;
   title: string;
   subtitle: string;
-  category: 'hair-makeup' | 'nails' | 'design';
+  category: 'hair-makeup' | 'nails' | 'digital';
   categoryLabel: string;
   year: string;
   client: string;

@@ -17,10 +17,12 @@ export const WORK_CATEGORIES: WorkCategoryOption[] = [
     description: 'Gel extensions, builder overlays, and custom nail art',
   },
   {
-    id: 'design',
-    label: 'Graphic Design',
-    description: 'Brand identity, logos, packaging, and digital visuals',
+    id: 'digital',
+    label: 'Digital Templates',
+    description: 'Custom Canva templates, social kits, and planners',
   },
 ];
+
+
 
 

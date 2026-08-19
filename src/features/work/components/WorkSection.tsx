@@ -35,7 +35,7 @@ export function WorkSection({
       all: workService.getCategoryCount('all'),
       'hair-makeup': workService.getCategoryCount('hair-makeup'),
       nails: workService.getCategoryCount('nails'),
-      design: workService.getCategoryCount('design'),
+      digital: workService.getCategoryCount('digital'),
     };
   }, []);
 
@@ -50,7 +50,7 @@ export function WorkSection({
 
   return (
     <section id="work" className="py-24 sm:py-32 px-6 sm:px-10 lg:px-20 max-w-[1440px] mx-auto">
-      <div className="text-center max-w-2xl mx-auto mb-6">
+      <div className="text-center max-w-2xl mx-auto mb-10">
         <span className="text-xs uppercase tracking-[0.2em] text-[#6a5c51] font-medium block mb-3">
           Curated Portfolio
         </span>
@@ -58,26 +58,16 @@ export function WorkSection({
           Featured Work
         </h2>
         <p className="mt-4 text-[#484740] font-body text-sm sm:text-base leading-relaxed">
-          A showcase of professional hair and makeup styling, custom nail services, and creative graphic design projects.
+          A showcase of professional hair and makeup styling, custom nail services, and creative digital templates.
         </p>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-2">
+      <div className="flex justify-center items-center mb-10">
         <CategoryFilter
           selectedCategory={activeCat}
           onSelectCategory={handleCategoryChange}
           itemCounts={itemCounts}
         />
-
-        <div className="w-full sm:w-64">
-          <input
-            type="text"
-            placeholder="Search projects, clients..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-transparent border-b border-[#c5b3a6]/60 px-3 py-2 text-xs text-[#1a1c1a] placeholder-[#797770] focus:outline-none focus:border-[#1a1c1a] transition-colors"
-          />
-        </div>
       </div>
 
       <PortfolioGrid
