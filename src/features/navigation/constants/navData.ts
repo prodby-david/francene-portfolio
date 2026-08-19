@@ -4,6 +4,10 @@ export const BRAND_NAME = 'FRANCENE';
 
 export const NAV_ITEMS: NavItem[] = [
   {
+    title: 'About',
+    href: '#atelier',
+  },
+  {
     title: 'Services',
     href: '#services',
     subItems: [
@@ -20,20 +24,20 @@ export const NAV_ITEMS: NavItem[] = [
         description: 'Gel extensions, builder overlays, and custom nail art',
       },
       {
-        title: 'Graphic Design',
-        href: '#graphic-design',
-        categoryId: 'design',
-        description: 'Brand identity, logos, packaging, and social templates',
+        title: 'Digital Templates',
+        href: '#digital-services',
+        categoryId: 'digital',
+        description: 'Custom Canva templates, social kits, and planners',
       },
     ],
   },
   {
-    title: 'Portfolio',
-    href: '#work',
+    title: 'UGC & Model',
+    href: '#creator-model',
   },
   {
-    title: 'About',
-    href: '#atelier',
+    title: 'Portfolio',
+    href: '#work',
   },
   {
     title: 'Contact',

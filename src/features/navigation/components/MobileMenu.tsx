@@ -129,7 +129,7 @@ export function MobileMenu({
             Book Appointment
           </a>
           <p className="text-center text-xs text-[#797770]">
-            Hair &amp; makeup, nail services &amp; graphic design
+            Hair &amp; makeup, nail services, digital templates &amp; UGC modeling
           </p>
         </div>
       </nav>

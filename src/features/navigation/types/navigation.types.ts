@@ -1,7 +1,7 @@
 export interface SubMenuItem {
   title: string;
   href: string;
-  categoryId?: 'hair-makeup' | 'nails' | 'design';
+  categoryId?: 'hair-makeup' | 'nails' | 'digital';
   description?: string;
 }
 
@@ -17,4 +17,5 @@ export interface NavigationState {
   isWorkDropdownOpen: boolean;
   activeSection: string;
 }
+
 
